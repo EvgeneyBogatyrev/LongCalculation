@@ -17,7 +17,7 @@ get_number(char **pnumb)
 
     do {
         c = getchar();
-        if (c == '+' || c == '-' || c == '*' || c == STOP_CHAR) {
+        if (c == '+' || c == '-' || c == '*' || c == '\0' || c == STOP_CHAR) {
             numb[count++] = '\0';
             numb = realloc(numb, count);
             return c;
